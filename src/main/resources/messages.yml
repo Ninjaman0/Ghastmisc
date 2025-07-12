@@ -1,0 +1,62 @@
+# GhastMisc Messages Configuration
+# Use & for color codes, &#FFFFFF for hex colors
+# Use <gradient:START:END>text</gradient> for gradients
+# Use <rainbow>text</rainbow> for rainbow text
+# Set to empty string or null to disable message
+
+# General Messages
+general:
+  no-permission: "&cYou don't have permission to use this command!"
+  player-only: "&cThis command can only be used by players!"
+  player-not-found: "&cPlayer not found: {player}"
+  invalid-amount: "&cInvalid amount: {amount}"
+  reload-success: "&aConfiguration reloaded successfully!"
+  reload-error: "&cError reloading configuration: {error}"
+
+# Crafting Messages
+crafting:
+  gui-opened: "&aCustom crafting table opened!"
+  item-registered: "&aItem registered as ingredient: {id}"
+  item-given: "&aGave {amount} {item} to {player}"
+  item-taken: "&aRemoved {amount} {item} from {player}"
+  item-not-found: "&cItem not found: {id}"
+  recipe-not-found: "&cRecipe not found: {id}"
+  no-permission-craft: "&cYou don't have permission to craft this item!"
+  inventory-full: "&cYour inventory is full! Cannot craft items."
+  compactor-opened: "&aCompactor opened! Place items in the first 5 slots."
+  autocraft-enabled: "&a&l[AutoCraft] &aAuto-crafting enabled!"
+  autocraft-disabled: "&c&l[AutoCraft] &cAuto-crafting disabled!"
+  recipe-saved: "&aRecipe saved successfully!"
+  recipe-cancelled: "&cRecipe editing cancelled."
+
+# Voucher Messages
+voucher:
+  received: "&aYou received a {type} voucher!"
+  given: "&aGave {type} voucher to {player} (Time: {time}min, Multiplier: {multiplier}x)"
+  used: "&aVoucher used successfully!"
+  cancelled: "&cVoucher use cancelled."
+  invalid: "&cInvalid voucher!"
+  invalid-data: "&cInvalid voucher data!"
+  type-not-found: "&cVoucher type not found!"
+  cannot-place: "&cYou cannot place vouchers!"
+  dropped-warning: "&eWarning: You dropped a voucher! Be careful not to lose it."
+  error-using: "&cError using voucher!"
+  error-finding: "&cError: Could not find voucher in inventory!"
+
+# Command Messages
+commands:
+  replaced: "&aCommand replaced: {command}"
+  not-found: "&cCommand not found: {id}"
+  testing: "&6Testing command: {id} for player: {player}"
+  executing: "&7Executing: &f{command}"
+
+# GUI Messages
+gui:
+  confirm: "&aConfirm"
+  cancel: "&cCancel"
+  confirm-lore: "&7Click to confirm"
+  cancel-lore: "&7Click to cancel"
+  back: "&7Back"
+  back-lore: "&7Click to go back"
+  save: "&aSave"
+  save-lore: "&7Click to save"

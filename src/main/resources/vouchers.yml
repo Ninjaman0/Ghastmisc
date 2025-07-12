@@ -1,0 +1,138 @@
+# GhastMisc Vouchers Configuration
+# This file defines all voucher types and their behaviors
+
+# Levels Voucher Configuration
+levels:
+  voucher-name: "&5Levels&6Voucher"
+  voucher-lore:
+    - "&4This voucher will give you {multiplier}X Levels boost"
+    - "&6for {time} minutes"
+    - "&6Right-click to redeem"
+  voucher-material: "PAPER"
+  texture: ""  # Optional: Custom texture URL for player heads
+  custom-model-data: 0  # Optional: Custom model data for resource packs
+  placeholder: "%levels_booster_status%"  # PlaceholderAPI placeholder to check
+  stackable: false
+  glow: true
+
+  # For levels: uses true/false system
+  true-action:
+    stop: true
+    stop-msg: "&cYou already have a levels booster active!"
+    command: ""
+  false-action:
+    stop: false
+    stop-msg: ""
+    command: "levels booster %player_name% {time} {multiplier}"
+
+# Essence Voucher Configuration
+essence:
+  voucher-name: "&dEssence&6Voucher"
+  voucher-lore:
+    - "&4This voucher will give you {multiplier}X Essence boost"
+    - "&6for {time} minutes"
+    - "&6Right-click to redeem"
+  voucher-material: "PAPER"
+  texture: ""
+  custom-model-data: 0
+  placeholder: "%essence_booster_status%"
+  stackable: false
+  glow: true
+
+  # For essence: uses true/false system
+  true-action:
+    stop: true
+    stop-msg: "&cYou already have an essence booster active!"
+    command: ""
+  false-action:
+    stop: false
+    stop-msg: ""
+    command: "essence booster %player_name% {time} {multiplier}"
+
+# Money Voucher Configuration
+money:
+  voucher-name: "&x&A&B&1&3&F&5&lMO&x&B&2&3&4&F&0&lNE&x&B&A&5&4&E&B&lY &x&C&1&7&5&E&6&lBo&x&C&8&9&6&E&1&los&x&D&0&B&6&D&C&lte&x&D&0&B&6&D&C&lr"
+  voucher-lore:
+    - "&4This voucher will give you {multiplier}X Money boost"
+    - "&6for {time} minutes"
+    - '&x&A&B&1&3&F&5&lDO&x&A&E&1&F&F&3&lNT&x&B&1&2&C&F&1&l C&x&B&3&3&8&E&F&lAR&x&B&6&4&4&E&E&lE &x&B&9&5&0&E&C&lAB&x&B&C&5&D&E&A&lOU&x&B&E&6&9&E&8&lT &x&C&1&7&5&E&6&lTH&x&C&4&8&1&E&4&lIS&x&C&7&8&E&E&2&l J&x&C&9&9&A&E&0&lUS&x&C&C&A&6&D&F&lT &x&C&F&B&2&D&D&lTE&x&D&2&B&F&D&B&lST&x&D&4&C&B&D&9&lIN&x&D&4&C&B&D&9&lG'
+    - "&6Right-click to redeem"
+  voucher-material: "PLAYER_HEAD"
+  texture: "http://textures.minecraft.net/texture/209299a117bee88d3262f6ab98211fba344ecae39b47ec848129706dedc81e4f"
+  custom-model-data: 0
+  placeholder: "%ghastutils_booster_timeleft%"  # Should return "None" or something else
+  stackable: false
+  glow: true
+
+  # For money: uses none/not-none system
+  none:
+    stop: false
+    stop-msg: ""
+    command: "ghastutils booster give %player_name% {multiplier} {time}"
+  not-none:
+    stop: true
+    stop-msg: "&cYou already have a money booster active!"
+    command: ""
+
+# Additional voucher types can be added here following the same pattern
+# Example for a custom voucher type:
+#
+# custom_type:
+#   voucher-name: "&bCustom&6Voucher"
+#   voucher-lore:
+#     - "&7This is a custom voucher"
+#     - "&7Time: {time} minutes"
+#     - "&7Multiplier: {multiplier}x"
+#   voucher-material: "ENCHANTED_BOOK"
+#   placeholder: "%custom_placeholder%"
+#   stackable: true
+#   glow: false
+#
+#   # Use true-action/false-action for true/false placeholders
+#   true-action:
+#     stop: true
+#     stop-msg: "&cCondition is true, cannot use!"
+#     command: ""
+#   false-action:
+#     stop: false
+#     stop-msg: ""
+#     command: "custom command %player_name% {time} {multiplier}"
+#
+#   # OR use none/not-none for "None" string checking
+#   none:
+#     stop: false
+#     stop-msg: ""
+#     command: "custom command %player_name% {time} {multiplier}"
+#   not-none:
+#     stop: true
+#     stop-msg: "&cAlready active!"
+#     command: ""
+
+# Configuration Notes:
+#
+# Placeholders:
+# - {time} = voucher time in minutes
+# - {multiplier} = voucher multiplier value
+# - %player_name% = player's name
+# - Any PlaceholderAPI placeholder can be used in commands
+#
+# Materials:
+# - Use valid Bukkit Material names (e.g., PAPER, ENCHANTED_BOOK, DIAMOND)
+# - For player heads, use PLAYER_HEAD and set texture URL
+#
+# Actions:
+# - stop: true = prevents voucher use and shows stop-msg
+# - stop: false = allows voucher use and executes command
+# - Commands are executed as console
+#
+# Placeholder Logic:
+# - For true/false system: checks if placeholder equals "true" (case insensitive)
+# - For none/not-none system: checks if placeholder equals "None" (case insensitive)
+#
+# Stackable:
+# - true = vouchers can stack in inventory
+# - false = each voucher takes one inventory slot
+#
+# Glow:
+# - true = adds enchantment glow effect
+# - false = normal item appearance

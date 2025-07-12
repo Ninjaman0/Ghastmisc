@@ -1,0 +1,101 @@
+# GhastMisc Custom Crafting Configuration
+# This file defines custom ingredients and recipes for the crafting system
+
+ingredients:
+  grinding_wheat:
+    item-name: "&5Wheat&3!!"
+    material: WHEAT
+    lore:
+      - "Just normal wheat"
+    custom-model-data: 21245
+
+  magic_dust:
+    item-name: "&dMagic Dust"
+    material: GLOWSTONE_DUST
+    lore:
+      - "&7Magical dust with special properties"
+    custom-model-data: 21246
+
+  enchanted_stick:
+    item-name: "&6Enchanted Stick"
+    material: STICK
+    lore:
+      - "&7A stick infused with magical energy"
+    custom-model-data: 21247
+    glow: true
+
+recipes:
+  example_item:
+    itemname: "&6Example Item"
+    material: DIAMOND_SWORD
+    lore:
+      - "&7This is an example custom item"
+      - "&7with multiple lines of lore"
+    permission: "craft.example_item"
+    glow: true
+    no-vanilla: false
+    custom_model_data: 1000
+    flags:
+      hide_attributes: true
+      hide_dye: true
+    recipe:
+      1: grinding_wheat:30
+      2: DIAMOND:1
+      5: STICK:1
+      7: STICK:1
+      8: DIAMOND:1
+      9: STICK:1
+    effects:
+      RIGHT_CLICK:
+        - "player: say I used the example item!"
+        - "console: give %player% diamond 1"
+
+  magic_sword:
+    itemname: "&5Magic Sword"
+    material: DIAMOND_SWORD
+    lore:
+      - "&7A sword infused with magical properties"
+      - "&7Deals extra damage to undead"
+    permission: "craft.magic_sword"
+    glow: true
+    no-vanilla: true
+    custom_model_data: 1001
+    flags:
+      hide_attributes: true
+    recipe:
+      1: magic_dust:5
+      2: DIAMOND:2
+      4: enchanted_stick:1
+      5: DIAMOND:3
+      6: enchanted_stick:1
+      7: magic_dust:5
+      8: DIAMOND:2
+      9: magic_dust:5
+    effects:
+      RIGHT_CLICK:
+        - "player: say The magic sword glows with power!"
+
+  super_pickaxe:
+    itemname: "&bSuper Pickaxe"
+    material: DIAMOND_PICKAXE
+    lore:
+      - "&7A pickaxe that can break multiple blocks"
+      - "&7Right-click to activate area mining"
+    permission: "craft.super_pickaxe"
+    glow: true
+    no-vanilla: true
+    custom_model_data: 1002
+    flags:
+      hide_attributes: true
+    recipe:
+      1: magic_dust:3
+      2: magic_dust:3
+      3: magic_dust:3
+      4: DIAMOND:1
+      5: enchanted_stick:1
+      6: DIAMOND:1
+      8: enchanted_stick:1
+    effects:
+      RIGHT_CLICK:
+        - "console: give %player% experience 100"
+        - "player: say Area mining activated!"

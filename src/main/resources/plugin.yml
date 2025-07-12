@@ -1,0 +1,54 @@
+name: GhastMisc
+version: 1.0.0
+main: com.ninja.ghastmisc.GhastMiscPlugin
+api-version: 1.19
+authors: [Ninja0_0 aka NotNinja0_0]
+description: A comprehensive plugin with crafting, voucher, and command systems
+softdepend: [PlaceholderAPI]
+
+commands:
+  gm:
+    description: Main command for GhastMisc
+    usage: /gm [subcommand]
+    permission: ghastmisc.use
+    permission-message: You don't have permission to use this command!
+
+permissions:
+  ghastmisc.*:
+    description: Gives access to all GhastMisc commands
+    children:
+      ghastmisc.use: true
+      ghastmisc.admin: true
+      ghastmisc.craft: true
+      ghastmisc.autocraft: true
+      ghastmisc.onecraft: true
+      ghastmisc.compactor: true
+      ghastmisc.voucher: true
+
+  ghastmisc.use:
+    description: Allows use of basic GhastMisc commands
+    default: true
+
+  ghastmisc.admin:
+    description: Gives access to admin commands
+    default: op
+
+  ghastmisc.craft:
+    description: Allows use of crafting GUI
+    default: true
+
+  ghastmisc.autocraft:
+    description: Allows use of autocraft feature
+    default: true
+
+  ghastmisc.onecraft:
+    description: Allows use of onecraft feature
+    default: true
+
+  ghastmisc.compactor:
+    description: Allows use of compactor
+    default: true
+
+  ghastmisc.voucher:
+    description: Allows use of vouchers
+    default: true

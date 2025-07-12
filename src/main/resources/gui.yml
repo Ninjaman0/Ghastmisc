@@ -1,0 +1,273 @@
+## GUI Configuration for GhastMisc Plugin
+
+# Crafting GUI Configuration
+crafting-gui:
+  title: "&6Custom Crafting Table"
+  size: 45
+  result-slot: 24
+  crafting-slots:
+    - 10
+    - 11
+    - 12
+    - 19
+    - 20
+    - 21
+    - 28
+    - 29
+    - 30
+
+  # Background items for non-interactive slots
+  background:
+    0:
+      material: "BLACK_STAINED_GLASS_PANE"
+      item-name: " "
+    1:
+      material: "BLACK_STAINED_GLASS_PANE"
+      item-name: " "
+    2:
+      material: "BLACK_STAINED_GLASS_PANE"
+      item-name: " "
+    3:
+      material: "BLACK_STAINED_GLASS_PANE"
+      item-name: " "
+    4:
+      material: "BLACK_STAINED_GLASS_PANE"
+      item-name: " "
+    5:
+      material: "BLACK_STAINED_GLASS_PANE"
+      item-name: " "
+    6:
+      material: "BLACK_STAINED_GLASS_PANE"
+      item-name: " "
+    7:
+      material: "BLACK_STAINED_GLASS_PANE"
+      item-name: " "
+    8:
+      material: "BLACK_STAINED_GLASS_PANE"
+      item-name: " "
+    9:
+      material: "GRAY_STAINED_GLASS_PANE"
+      item-name: " "
+    13:
+      material: "GRAY_STAINED_GLASS_PANE"
+      item-name: " "
+    18:
+      material: "GRAY_STAINED_GLASS_PANE"
+      item-name: " "
+    26:
+      material: "GRAY_STAINED_GLASS_PANE"
+      item-name: " "
+    27:
+      material: "GRAY_STAINED_GLASS_PANE"
+      item-name: " "
+    31:
+      material: "GRAY_STAINED_GLASS_PANE"
+      item-name: " "
+    32:
+      material: "GRAY_STAINED_GLASS_PANE"
+      item-name: " "
+    33:
+      material: "GRAY_STAINED_GLASS_PANE"
+      item-name: " "
+    34:
+      material: "GRAY_STAINED_GLASS_PANE"
+      item-name: " "
+    35:
+      material: "GRAY_STAINED_GLASS_PANE"
+      item-name: " "
+    36:
+      material: "BLACK_STAINED_GLASS_PANE"
+      item-name: " "
+    37:
+      material: "BLACK_STAINED_GLASS_PANE"
+      item-name: " "
+    38:
+      material: "BLACK_STAINED_GLASS_PANE"
+      item-name: " "
+    39:
+      material: "BLACK_STAINED_GLASS_PANE"
+      item-name: " "
+    40:
+      material: "BLACK_STAINED_GLASS_PANE"
+      item-name: " "
+    41:
+      material: "BLACK_STAINED_GLASS_PANE"
+      item-name: " "
+    42:
+      material: "BLACK_STAINED_GLASS_PANE"
+      item-name: " "
+    43:
+      material: "BLACK_STAINED_GLASS_PANE"
+      item-name: " "
+    44:
+      material: "BLACK_STAINED_GLASS_PANE"
+      item-name: " "
+
+  # Additional decorative items
+  additional-items:
+    decoration:
+      slot: 22
+      material: "PLAYER_HEAD"
+      texture: "http://textures.minecraft.net/texture/e3fc52264d8ad9e654f415bef01a23947edbccccf649373289bea4d149541f70"
+      item-name: "&6Crafting Helper"
+      lore:
+        - "&7Place items in the grid"
+        - "&7to create custom items!"
+        - ""
+        - "&eResult appears on the right!"
+      glow: true
+
+    info:
+      slot: 16
+      material: "BOOK"
+      item-name: "&bCrafting Info"
+      lore:
+        - "&7Use this crafting table to"
+        - "&7create custom items and recipes!"
+        - ""
+        - "&aCustom ingredients and recipes"
+        - "&aare supported!"
+
+# Compactor GUI Configuration
+compactor-gui:
+  title: "&6Compactor"
+  size: 45
+  compactor-slots:
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+
+  # Background for compactor
+  background:
+    0:
+      material: "BLACK_STAINED_GLASS_PANE"
+      item-name: " "
+    1:
+      material: "BLACK_STAINED_GLASS_PANE"
+      item-name: " "
+    2:
+      material: "BLACK_STAINED_GLASS_PANE"
+      item-name: " "
+    3:
+      material: "BLACK_STAINED_GLASS_PANE"
+      item-name: " "
+    4:
+      material: "BLACK_STAINED_GLASS_PANE"
+      item-name: " "
+    5:
+      material: "BLACK_STAINED_GLASS_PANE"
+      item-name: " "
+    6:
+      material: "BLACK_STAINED_GLASS_PANE"
+      item-name: " "
+    7:
+      material: "BLACK_STAINED_GLASS_PANE"
+      item-name: " "
+    8:
+      material: "BLACK_STAINED_GLASS_PANE"
+      item-name: " "
+    9:
+      material: "ORANGE_STAINED_GLASS_PANE"
+      item-name: " "
+    10:
+      material: "ORANGE_STAINED_GLASS_PANE"
+      item-name: " "
+    11:
+      material: "ORANGE_STAINED_GLASS_PANE"
+      item-name: " "
+    12:
+      material: "ORANGE_STAINED_GLASS_PANE"
+      item-name: " "
+    13:
+      material: "ORANGE_STAINED_GLASS_PANE"
+      item-name: " "
+    14:
+      material: "ORANGE_STAINED_GLASS_PANE"
+      item-name: " "
+    15:
+      material: "ORANGE_STAINED_GLASS_PANE"
+      item-name: " "
+    16:
+      material: "ORANGE_STAINED_GLASS_PANE"
+      item-name: " "
+    17:
+      material: "ORANGE_STAINED_GLASS_PANE"
+      item-name: " "
+    18:
+      material: "YELLOW_STAINED_GLASS_PANE"
+      item-name: " "
+    26:
+      material: "YELLOW_STAINED_GLASS_PANE"
+      item-name: " "
+    27:
+      material: "YELLOW_STAINED_GLASS_PANE"
+      item-name: " "
+    28:
+      material: "YELLOW_STAINED_GLASS_PANE"
+      item-name: " "
+    29:
+      material: "YELLOW_STAINED_GLASS_PANE"
+      item-name: " "
+    30:
+      material: "YELLOW_STAINED_GLASS_PANE"
+      item-name: " "
+    31:
+      material: "YELLOW_STAINED_GLASS_PANE"
+      item-name: " "
+    32:
+      material: "YELLOW_STAINED_GLASS_PANE"
+      item-name: " "
+    33:
+      material: "YELLOW_STAINED_GLASS_PANE"
+      item-name: " "
+    34:
+      material: "YELLOW_STAINED_GLASS_PANE"
+      item-name: " "
+    35:
+      material: "YELLOW_STAINED_GLASS_PANE"
+      item-name: " "
+    36:
+      material: "BLACK_STAINED_GLASS_PANE"
+      item-name: " "
+    37:
+      material: "BLACK_STAINED_GLASS_PANE"
+      item-name: " "
+    38:
+      material: "BLACK_STAINED_GLASS_PANE"
+      item-name: " "
+    39:
+      material: "BLACK_STAINED_GLASS_PANE"
+      item-name: " "
+    40:
+      material: "BLACK_STAINED_GLASS_PANE"
+      item-name: " "
+    41:
+      material: "BLACK_STAINED_GLASS_PANE"
+      item-name: " "
+    42:
+      material: "BLACK_STAINED_GLASS_PANE"
+      item-name: " "
+    43:
+      material: "BLACK_STAINED_GLASS_PANE"
+      item-name: " "
+    44:
+      material: "BLACK_STAINED_GLASS_PANE"
+      item-name: " "
+
+  # Additional items for compactor
+  additional-items:
+    help:
+      slot: 4
+      material: "COMPASS"
+      item-name: "&6Compactor Help"
+      lore:
+        - "&7Click items in your inventory"
+        - "&7to add them to the compactor!"
+        - ""
+        - "&eItems will be automatically"
+        - "&ecrafted when you close this GUI!"
+      glow: true
